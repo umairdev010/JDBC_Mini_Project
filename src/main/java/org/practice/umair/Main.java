@@ -26,6 +26,11 @@ public class Main {
                 break;
             case 2:
                 System.out.println("WELLCOME TO UPDATING STUDENT");
+                System.out.print("PLEASE ENTER THE NAME OF STUDENT : ");
+                name = input.next();
+                System.out.print("PLEASE ENTER MARKS TO UPDATE : ");
+                marks = input.nextInt();
+                DBoperations.updateStudetn(name,marks);
                 break;
             case 3:
                 System.out.println("WELLCOME TO DELETE A STUDENT.");
