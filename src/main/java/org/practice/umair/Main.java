@@ -1,17 +1,30 @@
 package org.practice.umair;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("\nWELLCOME TO DATABASE MANAGEMENT OF STUDENTS SELECT FROM THE FOLLOWING TO PERFORM OPERATION\n");
+        System.out.println("1. Add Student  2. Updated Student  3. Delete Student  4. Get All Students ");
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the choice : ");
+        int choice = input.nextInt();
+
+        switch (choice){
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            default:
+                System.out.println("PLEASE TRY AGAIN AND GIVE A VALID NUMBER FROM 1 TO 4.");
         }
+
     }
 }
+
