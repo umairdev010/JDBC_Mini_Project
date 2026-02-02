@@ -14,12 +14,24 @@ public class Main {
 
         switch (choice){
             case 1:
+                System.out.println("WELLCOME TO ADDING STUDENT.");
+                System.out.print("ENTER THE ID : ");
+                int id = input.nextInt();
+                System.out.print("ENTER THE NAME : ");
+                String name = input.next();
+                System.out.print("ENTER THE MARKS : ");
+                int marks = input.nextInt();
+                Students newStudent = new Students(id , name , marks);
+                DBoperations.addingStudent(newStudent);
                 break;
             case 2:
+                System.out.println("WELLCOME TO UPDATING STUDENT");
                 break;
             case 3:
+                System.out.println("WELLCOME TO DELETE A STUDENT.");
                 break;
             case 4:
+                System.out.println("WELLCOME TO GET ALL STUDENTS");
                 break;
             default:
                 System.out.println("PLEASE TRY AGAIN AND GIVE A VALID NUMBER FROM 1 TO 4.");

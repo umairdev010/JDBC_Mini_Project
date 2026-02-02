@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class ConnectDB {
 
-    public static void dbConnect(){
+    public static Connection dbConnect(){
 
         String url = "jdbc:postgresql://localhost:5432/testing";
         String user = "postgres";
@@ -16,11 +16,13 @@ public class ConnectDB {
 
             Connection connection = DriverManager.getConnection(url , user , password);
 
-            System.out.println("\n DATABASE connected \n");
+            System.out.println("\nDATABASE connected : 'SUCCESSFULLY'");
 
+            return connection;
 
         } catch (ClassNotFoundException | SQLException e) {
-            throw new RuntimeException(e);
+            System.out.println("There is a error in DB connection " + e);
+            return null;
         }
 
     }
