@@ -50,8 +50,8 @@ src/org/practice/umair/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/student-database-management.git
-   cd student-database-management
+   git clone https://github.com/umairdev010/JDBC_Mini_Project.git
+   cd JDBC_Mini_Project
    ```
 
 2. **Create PostgreSQL Database**
@@ -199,7 +199,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Umair**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@umairdev010](https://github.com/umairdev010)
 
 ## 🙏 Acknowledgments
 
