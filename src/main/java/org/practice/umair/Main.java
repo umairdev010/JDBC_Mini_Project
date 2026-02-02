@@ -30,13 +30,19 @@ public class Main {
                 name = input.next();
                 System.out.print("PLEASE ENTER MARKS TO UPDATE : ");
                 marks = input.nextInt();
-                DBoperations.updateStudetn(name,marks);
+                DBoperations.updateStudent(name,marks);
                 break;
             case 3:
                 System.out.println("WELLCOME TO DELETE A STUDENT.");
+                System.out.print("PLEASE ENTER A NAME TO DELETE STUDENT : ");
+                name =input.next();
+                DBoperations.deleteStudent(name);
                 break;
             case 4:
                 System.out.println("WELLCOME TO GET ALL STUDENTS");
+                for (Students student:DBoperations.getAllStudnets()){
+                    System.out.println(student);
+                }
                 break;
             default:
                 System.out.println("PLEASE TRY AGAIN AND GIVE A VALID NUMBER FROM 1 TO 4.");
